@@ -1,52 +1,35 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="data:image/png;base64,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">
-    <title>Script</title>
-</head>
-<body>
-    <section id="Home">
-   <h1>Quiz</h1> 
-   <!--QUIZ NUMERO 1-->
-   <h2>Qu'est ce que le javascript ?</h2>
-  <br>
-   <button id="A">A</button> <p>Langage de programmation qui permet d’implémenter des mécanismes complexes sur une page web.</p>  <br>  <br>
-   <button id="B">B</button>  <p>Langage de balisage utilisé pour la création de pages web, permettant notamment de définir des liens hypertextes.8</p><br><br>
-   <button id="C">C</button> <p>Un langage informatique qui décrit la présentation des documents HTML et XML. </p>
-    <p id="answer"></p>
-    <br>
-    <a id="next" href='#next-one'>Next ❯</a>
-    </section>
-    <!--IMAGE-->
-    <br><br><br><br>
-<img id="js" src="https://lh3.googleusercontent.com/proxy/ekTekQih7cYLWvOWsa79nQrtlKIX4KOpIKniAyrWdrcFw2TCPW8AkVKJsHZZ6tXxEISy1XQ3U8iX__zgBYGMJZt1mLPEzo4VQqC9dxVD8R2s06rSmocDH5NH">
-  <!--IMG-->
-    <!--CONTENEUR-->
-<div class="container">
-<h3>Définition du language Javascript :</h3>
-<br>
-<p id="cont">JavaScript est un langage de programmation de scripts principalement employé dans les pages web interactives et à ce titre est une partie essentielle des applications web. Avec les technologies HTML et CSS, JavaScript est parfois considéré comme l'une des technologies cœur du World Wide Web.</p>
-<br>
-</div>
-<!--SECTION 2-->
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-   <section id="next-one">
-</section>
-<!--QUIZ NUMERO 2 -->
 
-<h2>A quoi sert le language Javascript ?</h2>
-<br>
- <button id="AA">A</button> <p>Sert à mettre en forme les différents contenus définis par le HTML en leur appliquant des styles.</p>  <br>  <br>
- <button id="AB">B</button>  <p>C'est l'un des langages de programmation les plus polyvalents et les plus modernes au monde. </p><br><br>
- <button id="AC">C</button> <p>Améliorer l'ergonomie d'un site Internet et/ou d'une interface applicative utilisateur.</p>
-  <p id="response"></p>
-  <br>
-  <a id="previous" href='#Home'>Previous</a>
-<script src="script.js"></script>
-   
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://media.discordapp.net/attachments/782721423218573333/909828099003277343/quiz-3644414_960_720.png" />
+  <title>Quuuiz !</title>
+</head>
+
+<body>
+
+  <div class="title">Quuuiz !</div>
+  <div id="container"></div>
+
+  <!--Popup-->
+  <div id="popup">
+    <div class="popup-header">
+      <div class="popup-title">Définition du language Javascript :</div>
+      <div class="popup-button" onclick="togglePopup()">
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve"><path style="fill:#FFFFFF;" d="M21.125,0H4.875C2.182,0,0,2.182,0,4.875v16.25C0,23.818,2.182,26,4.875,26h16.25   C23.818,26,26,23.818,26,21.125V4.875C26,2.182,23.818,0,21.125,0z M18.78,17.394l-1.388,1.387c-0.254,0.255-0.67,0.255-0.924,0   L13,15.313L9.533,18.78c-0.255,0.255-0.67,0.255-0.925-0.002L7.22,17.394c-0.253-0.256-0.253-0.669,0-0.926l3.468-3.467   L7.221,9.534c-0.254-0.256-0.254-0.672,0-0.925l1.388-1.388c0.255-0.257,0.671-0.257,0.925,0L13,10.689l3.468-3.468   c0.255-0.257,0.671-0.257,0.924,0l1.388,1.386c0.254,0.255,0.254,0.671,0.001,0.927l-3.468,3.467l3.468,3.467   C19.033,16.725,19.033,17.138,18.78,17.394z"/></svg>
+      </div>
+    </div>
+    <div class="popup-text">
+      JavaScript est un langage de programmation de scripts principalement employé dans les pages web interactives et à ce titre est une partie essentielle des applications web. Avec les technologies HTML et CSS, JavaScript est parfois considéré comme l'une des technologies cœur du World Wide Web.</div>
+  </div>
+
+  <script src="db.js"></script>
+  <script src="script.js"></script>
+
 </body>
+
 </html>
